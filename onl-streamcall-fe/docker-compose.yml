@@ -1,0 +1,10 @@
+version: '3'
+services:
+  stream-call-fe:
+    container_name: stream-call-fe
+    image: stream-call-fe
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - '3456:80'
